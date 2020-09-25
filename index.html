@@ -83,6 +83,7 @@
       <a-cylinder color="#313374" position="2.5 3 -5" scale="0.2 1 0.3" class="intersectable">
       </a-cylinder>
       <a-cylinder color="#DFE4E1" position="2.5 0 -5" scale="0.5 2.8 0.2" class="intersectable"
+      material="src: https://cdn.glitch.com/2a5d4286-1594-43b4-bbd8-b941a86f2df5%2F75a70e898a00cf210e7c54c2a0585a9b.jpg?v=1600897112562" shadow
       >
       </a-cylinder>
       <a-animation id= "#sanitizer" begin="click" color="red" dur="3000"></a-animation>
@@ -98,23 +99,58 @@
     </a-entity>
 
 
-    <a-entity id="tap">
-    <a-box color="#00FFFF" position="0 1 -2.5" class="intersectable" scale="0.5 0.5 0.2" rotation="0 0 0"
+    <a-entity id="tap" position="-1 0 1" rotation="0 13 0">
+    <a-box color="#DFDFE1" position="0 1 -2.5" class="intersectable" scale="0.5 0.5 0.2" rotation="0 0 0"
+    material="src: img/tap.jpg"
+
             ></a-box>
-    <a-box color="#00FFFF" position="0 1 -2.5" class="intersectable" scale="0.3 0.5 0.2" rotation="0 90 0"
-                    ></a-box>
-                    <a-sphere radius="0.2"
-                              color ="yellow"
-                              position="0 1 -2"
+    <a-sphere color="#00FFFF" position="0 1.2 -2.5" class="intersectable" scale="0.10 0.12 0.2" rotation="0 90 0"
+                    ></a-sphere>
+                    <a-cone radius-bottom="0.02" radius-top="0.04"
+                              color ="#8E8E90"
+                              position="0 0.5 -2.5"
                               class="intersectable"
                              <a-animation begin="click" color="red" dur="3000"></a-animation>
-                             <a-text text="width:5; color: red; value: SANITIZER" position="-1 -1.5 1" rotation="-10 -90 0"></a-text>
-                    </a-sphere>
-     <a-cylinder color="#DFE4E1" position="0 1 -3" scale="0.05 0.8 0.2" class="intersectable"
-     >
+                    </a-cone>
+                    <a-cone radius-bottom="0.02" radius-top="0.03"
+                              color ="#00FFFF"
+                              position="0 1.22 -2.5"
+                              class="intersectable"
+                              material="src: img/water.jpg"
+                             <a-animation begin="click" color="red" dur="3000"></a-animation>
+                    </a-cone>
+     <a-cylinder color="#DFE4E1" position="0 1.3 -2.7" scale="0.03 1 0.2" class="intersectable"
+     material="src: img/steel.jpg">
      </a-cylinder>
-    <a-animation id= "#tap" begin="click" light="type: directional; color: #FFF; intensity: 19"></a-animation>
+     <a-text text="width:3; color: red; value: Tap" position="-0.2 1.9 -2.7"
+              rotation="0 0 0"></a-text>
+     <a-cylinder color="#DFE4E1" position="0 1.7 -2.7" scale="0.02 0.8 0.2" class="intersectable"
+     rotation="0 90 90"
+     material="src: img/steel.jpg">
+     </a-cylinder>
+    <a-animation id= "" begin="click" light="type: directional; color: #FFF; intensity: 19"></a-animation>
     </a-entity>
+  <a-entity>
+    <a-cylinder id="soap" color="#cdc1f0" position="-2 1 -2.9" scale="0.3 0.5 0.2" class="intersectable"
+    rotation="0 180 180"
+    material="src: img/soap.jpg">
+    </a-cylinder>
+    <a-text text="width:5; color: red; value: Soap Box" position="-1.95 0.5 -2.9" rotation="-2 90 0"></a-text>
+
+</a-entity>
+
+<a-entity id="towel">
+  <a-text text="width:4; color: red; value: Towel" position="1.59 0.8 -2.25" rotation="0 -50 0"></a-text>
+<a-cylinder color="#cdc1f0" position="1 1.85 -1.2" scale="0.02 0.3 0" class="intersectable"
+rotation="0 90 90"
+material="src: img/steel.jpg">
+</a-cylinder>
+<a-cylinder id="towel" color="white" position="1 1.635 -1.2" scale="0.2 0.25 0" class="intersectable"
+rotation="0 90 90"
+material="src: img/towel.png"
+</a-cylinder>
+</a-entity>
+
 
 
       <a-entity mobile></a-entity>
