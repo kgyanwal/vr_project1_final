@@ -5,89 +5,51 @@
 
 
 The Hall is a demo created in [Cecropia Solutions](http://www.cecropiasolutions.com/) to test the WebVR capabilities.
-
-The project has a variety of art items in display. Some custom, some of free access and use.
-
-This project is a revamp of our original Hall project [(https://github.com/Cecropia/thehallvr)](https://github.com/Cecropia/thehallvr) which is in its entirety a THREE.js project, we decided to migrate it to A-Frame to test its convenience against a stand-alone THREE.js app for VR and the results are superior. The most important part is that there's a default behavior such as controls across VR devices and compatibility that makes it easy to work with it.
-
-# Navigation
-
-In this version, the main navigation is hand controls (Vive wands and Oculus Touch) to fire a teleporting ray to target where you want to be at.
-
-For desktop the traditional gaming controls are available (WASD, arrow keys and mouse).
-
-For mobile platforms (GearVR and Cardboard) Teleport Spots with a Gaze cursor are the way to jump to the several targets placed in the hall.
+The hall is skeleton is taken from the above link to work on this project. 
 
 
+Description of the Project:
 
+This work shows the sitation of hallway during the covid. In the hallway, there are six objects which are manually created by me using aframe. 
 
-# Development process
+1. Water Tap
+2. Towel
+3. Soap Bar
+4. Mask
+5. Sanitizer bottle
+6. Log (on which the sanitizer bottle is revolving). 
 
-The object modeling and texture baking was created in Blender, where the 1m unit is used as base size; the models are exported individually, converted to CTM and loaded into the application via Three.js.
+There is also an audio file, which gives a brief message what's the use of these components in order to project ourselves and others. 
 
-A couple of the models were created with Oculus Medium and later decimated with Meshlab.
+Thease are the key components in order to protect ourselves from the coronavius and save others lives. 
 
-A couple of [Kinetic Sculptures](https://en.wikipedia.org/wiki/Kinetic_art) were created directly with Three.js and a bit of Math knowledge.
+Development:
 
-We created a motorcycle model with [Photogrammetry](https://en.wikipedia.org/wiki/Photogrammetry).
+The hallway is adopted from the third party sources, which has multiple images and object loaded. 
 
-Captured human movement to create four animations that occupy one side of a hallway.
+I have created above mentioned objects using aframe libraries. I used the entity like cone, cylinder, sphere, and position the created objects at the proper place. 
+Like the tap, soap and towel are located closeby and mask and sanitizer are located at the end direct direction of the hallway. I rotate the bottle of sanitizer and the word sanitization using animation tag. I used images to create the textures of the objects, sich as the log from the glitch and others from different sources, which you can see in the reference below. 
 
+Explanation of codes
 
-# Migration process
+1. Visual Images and Animation: Sanitizer bottle: for sanitizer bottle I use one sphere and one cylinder and mannually tested the the shape of the objects by pressing ctrl+option+i for visual inspictor which is useful to evaluation the position of objects. I use rotation property of animation to rotate the bottle. I used an image of drops of water to create a texture on the bottle. I also labelled the name of the bottle and rotate with its parent accordingly. I used a cylinder for creating a log. Mask: For mask I used a code and a circle and for the texture I also added an image for the better look and feel. In the same way I manually created a tap and towel and for the texture I used the steel materials, and to make the water flow I used rotation with higher speed, so it shows the water is flowing on the skin and water color is copied from css colerpicker site. For towel, I used a cylinder and for the texture of the towel I used an image of towel. I also rotate the towel to bring user's attention. 
 
-The original project is THREE.js [(https://github.com/Cecropia/thehallvr)](https://github.com/Cecropia/thehallvr); the main changes are in the way the models are loaded, now they are all located at the index.html also with the texture assets. Default model compatibility in A-Frame is .obj and recently .gltf, but we already have the .ctm format to handle large models, so this time we stick with it, but since there's no entity component for .ctm we created one.
+2. Audio: I used voicebooking.com and type 
 
-For the kinectic animations we had to create components, one for the one placed in the roof, one for the spheres, another for the fractal, and a last one for the four mocaps. The code is pretty much the same, I think this could not be accomplished without proper (or previous) THREE.js knowledge.
-
-Our teleportation process was removed and we used the A-Frame checkpoints. We had to create a mobile component to add this checkpoints for mobile only because there is no option for this in A-Frame.
-
-The compatibility in various devices is now handled by A-Frame, we previously had a fallback for mobile, but it's not enough to handle all the cases.
-
-Overall the migration was very transparent thanks to the previous THREE.js knowledge.
-
-
-
-[Live Demo](https://cecropia.github.io/thehallaframe/)
+3. Live Demo: You can click the following link for the live demo
+[Live Demo](https://kgyanwal.github.io/vr_project1_final/)
 
 
 [YouTube Video](https://www.youtube.com/watch?v=0nuiaWGNXAw)
 
 
 
-# Technologies used
-
+# References
+-[Hallway](https://cecropia.github.io/thehallaframe/)
 - [WebVR](https://webvr.info/)
 - [Three.js r84](https://threejs.org/) (previous version now A-Frame)
 - [A-Frame v 0.5.0](https://aframe.io/)
 - [Gamepad API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API) (previous version now A-Frame)
 - [gamepad.js](https://github.com/Absulit/gamepad.js) (previous version now A-Frame)
-- [Blender](https://www.blender.org/)
-- [Wavefront OBJ file format](https://en.wikipedia.org/wiki/Wavefront_.obj_file)
-- [CTM file format](https://en.wikipedia.org/wiki/OpenCTM)
-- [OpenCTM](http://openctm.sourceforge.net/)
-- [Oculus Medium](https://www.oculus.com/medium/)
-- [Meshlab](http://www.meshlab.net/)
 
-# Various Models are from
 
-- [Archive3D](http://archive3d.net/)
-- [Nefertiti](http://nefertitihack.alloversky.com/)
-- [Female with a Helmet](https://sketchfab.com/models/c80c8fd27ebf4762a781ac298667fa48)
-
-# Audio is from
-
-- [freesound.org](https://www.freesound.org/)
-
-# Paintings from
-
-- [wikipedia.org](https://www.wikipedia.org/)
-
-# More images
-
-![hallvr2](/screenshots/thehall2.jpg)
-![hallvr3](/screenshots/thehall3.jpg)
-![hallvr4](/screenshots/thehall4.jpg)
-![hallvr5](/screenshots/thehall5.jpg)
-
-[Live Demo](https://cecropia.github.io/thehallaframe/)
