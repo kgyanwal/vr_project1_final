@@ -13,7 +13,7 @@
 
     <meta name="twitter:card" content="summary_large_image">
 
-    <meta name="twitter:title" content="Cecropia's The Hall VR in A-Frame">
+    <meta name="twitter:title" content="Krishana's project based on Cecropia's The Hall VR in A-Frame">
     <meta name="twitter:description" content="WebVR demo that displays art ">
     <meta name="twitter:image" content="https://cecropia.github.io/thehallaframe/screenshots/thehall1.jpg">
 
@@ -61,28 +61,18 @@
 
     <a-scene device-orientation-permission-ui="">
 
-      <!-- Sphere-->
-      <a-sphere radius="1.5"
-                color ="green"
-                position="45 0 6"
-                class="intersectable">
-               <a-animation begin="click" color="red" dur="3000"></a-animation>
-      </a-sphere>
-      <a-cylinder color="green" position="45 2 6" scale="0.5 2 0.5" class="intersectable">
-      </a-cylinder>
-      <a-cylinder color="blue" position="45 0 6" scale="0.2 1 0.2" class="intersectable">
-      </a-cylinder>
-
-    <a-entity id="sanitizer">
+    <a-entity id="myDIV" click="myFunction()">
       <a-sphere radius="0.64"
                 color ="#74CCF4"
                 position="2.5 2 -5"
+                material="src: img/drops-of-water.jpg"
+                rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
                 class="intersectable"
                <a-animation begin="click" color="red" dur="3000"></a-animation>
                <a-text text="width:5; color: red; value: SANITIZER" position="-1 -1.5 1" rotation="-10 -90 0"></a-text>
       </a-sphere>
 </a-entity>
-<a-entity id="bottle">
+<a-entity id="bottle" class="example" onclick="myFunc()">
       <a-cylinder color="#313374" position="2.5 3 -5" scale="0.2 1 0.3" class="intersectable">
       </a-cylinder>
       <a-cylinder color="#DFE4E1" position="2.5 0 -5" scale="0.5 2.8 0.2" class="intersectable"
@@ -93,8 +83,11 @@
     </a-entity>
 
     <a-entity id="mask">
-    <a-cone color="#00FFFF" radius-bottom="0.2" radius-top="0.7" position="-1.9 1 -4.5" class="intersectable" scale="0.7 0.5 0.2" rotation="0 50 0"
-            ></a-cone>
+    <a-cone color="#00FFFF" radius-bottom="0.2" radius-top="0.7" position="-1.9 1 -4.5" class="intersectable" scale="0.7 0.5 0.2" rotation="20 30 30"
+    material="src: img/mask_edit.png"
+    rotation="0 0 0" animation="property: rotation; to: 0 -360 0; loop: true; dur: 10000"
+      >
+          </a-cone>
      <a-ring radius="0.1" position="-1.9 1 -4.5" rotation="50 40 10" scale="0.1 1 0.2"></a-ring>
      <a-text text="width:5; color: red; value: MASK" position="-1.9 0.5 -4.5" rotation="0 -0.3 30"></a-text>
 
@@ -118,6 +111,7 @@
                     <a-cone radius-bottom="0.02" radius-top="0.03"
                               color ="#00FFFF"
                               position="0 1.22 -2.5"
+                              rotation="0 0 0" animation="property: rotation; to: 0 300 0; loop: true; dur: 80"
                               class="intersectable"
                               material="src: img/water.jpg"
                              <a-animation begin="click" color="red" dur="3000"></a-animation>
@@ -151,6 +145,7 @@ material="src: img/steel.jpg">
 <a-cylinder id="towel" color="white" position="1 1.635 -1.2" scale="0.2 0.25 0" class="intersectable"
 rotation="0 90 90"
 material="src: img/towel.png"
+rotation="0 0 0" animation="property: rotation; to: 100 0 -70; loop: true; dur: 8000"
 </a-cylinder>
 </a-entity>
 
@@ -174,15 +169,16 @@ material="src: img/towel.png"
 
 
         <img id="sky_sphere-texture" src="textures/sky_sphere.jpg">
-
+<!--
         <a-sound src="audio/84529__cmusounddesign__02-museum.ogg"
                  autoplay="true"
                  loop="true"
                  position="1 1 0"></a-sound>
-
-        <a-sound src="audio/219462__cediez__musee-victoria-londres-grand-escalier.ogg"
+-->
+        <a-sound src="audio/voicebooking-speech.wav"
                  autoplay="true"
                  loop="true"
+                 pauseSound=1000
                  position="1 1 10"></a-sound>
 
 
