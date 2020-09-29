@@ -34,15 +34,21 @@ Explanation of codes
 
 1. Visual Images and Animation: Sanitizer bottle: for sanitizer bottle I use one sphere and one cylinder and mannually tested the the shape of the objects by pressing ctrl+option+i for visual inspictor which is useful to evaluation the position of objects. I use rotation property of animation to rotate the bottle. I used an image of drops of water to create a texture on the bottle. I also labelled the name of the bottle and rotate with its parent accordingly. I used a cylinder for creating a log. Mask: For mask I used a code and a circle and for the texture I also added an image for the better look and feel. In the same way I manually created a tap and towel and for the texture I used the steel materials, and to make the water flow I used rotation with higher speed, so it shows the water is flowing on the skin and water color is copied from css colerpicker site. For towel, I used a cylinder and for the texture of the towel I used an image of towel. I also rotate the towel to bring user's attention.
 
-2. Audio: I used voicebooking.com and type
+2. Audio: I used voicebooking.com and currently ios does not support aframe audio, third party library is needed. So, the audio is tested on Desktop/Laptop and Andrio devices.
 
 3. Live Demo: You can click the following link for the live demo
 [Live Demo](https://kgyanwal.github.io/vr_project1_final/)
+
+4. Onclick interaction: When the user click the mouse or tab on the screen on the phone, then two items disappears, one is sanitizer and another is mask. The reason behind that is the user has to take those two item while going out of the hallway.  
 
 
 [YouTube Video](https://www.youtube.com/watch?v=0nuiaWGNXAw)
 
 4. Images:
+https://pixabay.com/photos/drops-of-water-water-liquid-fresh-578897/
+All images are royalty free and downloaded from pixabay
+The image of mask is cropped to get the correct texture of the mask
+Webdownloaded image for the texture are, mask.png, screw.jpg, steel.jpg, tap.jpb, water.jpg
 
 
 
@@ -53,3 +59,4 @@ Explanation of codes
 - [A-Frame v 0.5.0](https://aframe.io/)
 - [Gamepad API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API) (previous version now A-Frame)
 - [gamepad.js](https://github.com/Absulit/gamepad.js) (previous version now A-Frame)
+_[Aframe extras]
