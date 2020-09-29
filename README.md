@@ -30,6 +30,9 @@ The hallway is adopted from the third party sources, which has multiple images a
 I have created above mentioned objects using aframe libraries. I used the entity like cone, cylinder, sphere, and position the created objects at the proper place.
 Like the tap, soap and towel are located closeby and mask and sanitizer are located at the end direct direction of the hallway. I rotate the bottle of sanitizer and the word sanitization using animation tag. I used images to create the textures of the objects, sich as the log from the glitch and others from different sources, which you can see in the reference below.
 
+![Covid Safe Hallway](/screenshots/covid_safehallway.png)
+
+
 Explanation of codes
 
 1. Visual Images and Animation: Sanitizer bottle: for sanitizer bottle I use one sphere and one cylinder and mannually tested the the shape of the objects by pressing ctrl+option+i for visual inspictor which is useful to evaluation the position of objects. I use rotation property of animation to rotate the bottle. I used an image of drops of water to create a texture on the bottle. I also labelled the name of the bottle and rotate with its parent accordingly. I used a cylinder for creating a log. Mask: For mask I used a code and a circle and for the texture I also added an image for the better look and feel. In the same way I manually created a tap and towel and for the texture I used the steel materials, and to make the water flow I used rotation with higher speed, so it shows the water is flowing on the skin and water color is copied from css colerpicker site. For towel, I used a cylinder and for the texture of the towel I used an image of towel. I also rotate the towel to bring user's attention.
