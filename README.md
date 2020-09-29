@@ -17,7 +17,7 @@ This work shows the sitation of hallway during the covid. In the hallway, there 
 3. Soap Bar
 4. Mask
 5. Sanitizer bottle
-6. Log (on which the sanitizer bottle is revolving).
+6. Log (on which the sanitizer bottle is rotating).
 
 There is also an audio file, which gives a brief message what's the use of these components in order to project ourselves and others.
 
@@ -44,14 +44,15 @@ Explanation of codes
 
 4. Onclick interaction: When the user click the mouse or tab on the screen on the phone, then two items disappears, one is sanitizer and another is mask. The reason behind that is the user has to take those two item while going out of the hallway.  
 
-
-[YouTube Video](https://www.youtube.com/watch?v=0nuiaWGNXAw)
-
-4. Images:
+5. Images:
 https://pixabay.com/photos/drops-of-water-water-liquid-fresh-578897/
 All images are royalty free and downloaded from pixabay
 The image of mask is cropped to get the correct texture of the mask
 Webdownloaded image for the texture are, mask.png, screw.jpg, steel.jpg, tap.jpb, water.jpg
+
+
+6. [YouTube Video](https://www.youtube.com/watch?v=0nuiaWGNXAw)
+
 
 
 
