@@ -60,19 +60,23 @@
     <!--<a-scene stats>-->
 
     <a-scene device-orientation-permission-ui="">
+      <a-camera>
+  <a-cursor color="green" position="0 0 -0.7"></a-cursor>
+  </a-camera>
 
-    <a-entity id="myDIV" click="myFunction()">
+    <a-entity  class="hide" onclick="myFunc()">
       <a-sphere radius="0.64"
+                begin="click"
+                class="example"
                 color ="#74CCF4"
                 position="2.5 2 -5"
                 material="src: img/drops-of-water.jpg"
                 rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
-                class="intersectable"
-               <a-animation begin="click" color="red" dur="3000"></a-animation>
+                class="intersectable">
                <a-text text="width:5; color: red; value: SANITIZER" position="-1 -1.5 1" rotation="-10 -90 0"></a-text>
       </a-sphere>
 </a-entity>
-<a-entity id="bottle" class="example" onclick="myFunc()">
+<a-entity id="bottle" class="hide" onclick="myFunc()">
       <a-cylinder color="#313374" position="2.5 3 -5" scale="0.2 1 0.3" class="intersectable">
       </a-cylinder>
       <a-cylinder color="#DFE4E1" position="2.5 0 -5" scale="0.5 2.8 0.2" class="intersectable"
@@ -82,7 +86,7 @@
       <a-animation id= "#sanitizer" begin="click" color="red" dur="3000"></a-animation>
     </a-entity>
 
-    <a-entity id="mask">
+    <a-entity id="mask" class="hide" onclick="myFunc1()" begin="click">
     <a-cone color="#00FFFF" radius-bottom="0.2" radius-top="0.7" position="-1.9 1 -4.5" class="intersectable" scale="0.7 0.5 0.2" rotation="20 30 30"
     material="src: img/mask_edit.png"
     rotation="0 0 0" animation="property: rotation; to: 0 -360 0; loop: true; dur: 10000"

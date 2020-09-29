@@ -16,6 +16,12 @@ function myFunction() {
 }
 
 function myFunc() {
-  var x = document.getElementsByClassName("example");
-  x[0].innerHTML = "Hello World!";
+  var x = document.getElementsByClassName("hide");
+  x[0].innerHTML = "sanitizer is gone";
+  x[1].innerHTML = "log is gone";
+}
+
+function myFunc1() {
+  var x = document.getElementsByClassName("hide");
+  x[2].innerHTML = "mask is taken";
 }
