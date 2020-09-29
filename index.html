@@ -13,6 +13,8 @@
 
     <meta name="twitter:card" content="summary_large_image">
 
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
     <meta name="twitter:title" content="Krishana's project based on Cecropia's The Hall VR in A-Frame">
     <meta name="twitter:description" content="WebVR demo that displays art ">
     <meta name="twitter:image" content="https://cecropia.github.io/thehallaframe/screenshots/thehall1.jpg">
@@ -86,7 +88,7 @@
       <a-animation id= "#sanitizer" begin="click" color="red" dur="3000"></a-animation>
     </a-entity>
 
-    <a-entity id="mask" class="hide" onclick="myFunc1()" begin="click">
+    <a-entity id="mask" class="hide" onclick="myFunc1()" startEvents="fadein">
     <a-cone color="#00FFFF" radius-bottom="0.2" radius-top="0.7" position="-1.9 1 -4.5" class="intersectable" scale="0.7 0.5 0.2" rotation="20 30 30"
     material="src: img/mask_edit.png"
     rotation="0 0 0" animation="property: rotation; to: 0 -360 0; loop: true; dur: 10000"
