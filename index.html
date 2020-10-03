@@ -96,8 +96,10 @@
       >
           </a-cone>
      <a-ring radius="0.1" position="-1.9 1 -4.5" rotation="50 40 10" scale="0.1 1 0.2"></a-ring>
-     <a-text text="width:5; color: red; value: Click Me" position="-1.9 0.8 -4.0" rotation="0 -0.3 30"></a-text>
-     <a-text text="width:5; color: red; value: MASK" position="-1.9 0.5 -4.5" rotation="0 -0.3 30"></a-text>
+     <a-text text="width:5; color: white; value: Click Me" position="-1.9 0.8 -4.0" rotation="0 -0.3 30"></a-text>
+     <a-text text="width:5; color: red; value: MASK" position="-1.9 0.5 -4.5"
+     rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
+></a-text>
 
     <a-animation id= "#mask" begin="click" light="type: directional; color: #FFF; intensity: 19"></a-animation>
     </a-entity>
