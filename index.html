@@ -67,6 +67,7 @@
   </a-camera>
 
     <a-entity  class="hide" onclick="myFunc()">
+      <a-text text="width:3; color: red; value: Click Me!" position="0.5 1.5 -1.5"></a-text>
       <a-sphere radius="0.64"
                 begin="click"
                 class="example"
@@ -76,7 +77,6 @@
                 rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
                 class="intersectable">
                <a-text text="width:5; color: red; value: SANITIZER" position="-1 -1.5 1"></a-text>
-               <a-text text="width:5; color: red; value: Click Me!" position="-1 -1.1 1"></a-text>
       </a-sphere>
 </a-entity>
 <a-entity id="bottle" class="hide" onclick="myFunc()">
