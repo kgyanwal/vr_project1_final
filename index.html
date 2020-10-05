@@ -89,6 +89,13 @@
       <a-animation id= "#sanitizer" begin="click" color="red" dur="3000"></a-animation>
     </a-entity>
 
+<a-entity>
+  <a-camera>
+<a-cursor color="green" position="0 0 -0.4"></a-cursor>
+</a-camera>
+</a-entity>
+
+
     <a-entity id="mask" class="hide" onclick="myFunc1()" startEvents="fadein">
     <a-cone color="#00FFFF" radius-bottom="0.2" radius-top="0.7" position="-1.9 1 -4.5" class="intersectable" scale="0.7 0.5 0.2" rotation="20 30 30"
     material="src: img/mask_edit.png"
@@ -142,11 +149,24 @@
     rotation="0 180 180"
     material="src: img/soap.jpg">
     </a-cylinder>
-    <a-text text="width:5; color: red; value: Soap Box" position="-1.95 0.5 -2.9" rotation="-2 90 0"></a-text>
-    <a-text text="width:5; color: yellow; value: 1. Wash Your Hands for 20 Seconds" position="-1.5 0.7 -2.9" animation="property: position; to: 0 20 -70; loop: true; dur: 50000"></a-text>
-    <a-text text="width:5; color: yellow; value: 2. Use towel to soak your hands" position="-1.5 0.5 -2.9" animation="property: position; to: 0 8 -50; loop: true; dur: 50005"></a-text>
-    <a-text text="width:5; color: yellow; value: 3. Wear mask while you go out" position="-1.5 0.3 -2.9" animation="property: position; to: 0 6 -30; loop: true; dur: 50010"></a-text>
-    <a-text text="width:5; color: yellow; value: 4. Carry sanitizer" position="-1.5 0.1 -2.9" animation="property: position; to: 0 4 -10; loop: true; dur: 50020"></a-text>
+
+    <a-entity>
+      <a-camera>
+
+    </a-camera>
+    </a-entity>
+
+    <a-entity>
+      <a-camera>
+      <a-text text="width:3; color: blue; value:B4 Covid" position="-1 -1.5 -2.5" animation="property: position; to: 0 30 90; loop: true; dur: 50000"></a-text>
+    </a-camera>
+    </a-entity>
+    <a-text text="width:3; color: red; value: Soap Box" position="-1.95 0.5 -2.9" rotation="-2 90 0"></a-text>
+    <a-text text="width:5; color: red; value: After Covid" position="-0.5 0.9 -2.9"></a-text>
+    <a-text text="width:3; color: yellow; value: 1. Wash Your Hands for 20 Seconds" position="-1 0.7 -2.9" animation="property: position; to: 0 20 -70; loop: true; dur: 50000"></a-text>
+    <a-text text="width:3; color: yellow; value: 2. Use towel to soak your hands" position="-1 0.5 -2.9" animation="property: position; to: 0 8 -50; loop: true; dur: 50005"></a-text>
+    <a-text text="width:3; color: yellow; value: 3. Wear mask while you go out" position="-1 0.3 -2.9" animation="property: position; to: 0 6 -30; loop: true; dur: 50010"></a-text>
+    <a-text text="width:3; color: yellow; value: 4. Carry sanitizer" position="-1 0.1 -2.9" animation="property: position; to: 0 4 -10; loop: true; dur: 50020"></a-text>
 
 </a-entity>
 
